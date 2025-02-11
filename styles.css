@@ -1,0 +1,101 @@
+* {
+  font-family: "Indie Flower", serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #edede9;
+}
+header {
+  margin: 0;
+}
+header p {
+  font-weight: 400;
+  font-size: 40px;
+  padding-left: 20px;
+  color: #d5bdaf;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.whose-turn {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
+  font-size: 25px;
+  color: #d6ccc2;
+}
+.current-player {
+  color: #d5bdaf;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px;
+  gap: 10px;
+  margin: 20px;
+  padding: 10px;
+}
+.game-board-cell {
+  background-color: #d6ccc2;
+  border: none;
+  border-radius: 10px;
+  color: #edede9;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-board {
+  color: #d6ccc2;
+  font-size: 30px;
+  font-weight: bold;
+}
+.player-score,
+.it-is-a-tie {
+  color: #d5bdaf;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.next-round-n-reset {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.play-again-button,
+.reset-game-button {
+  border: none;
+  border-radius: 10px;
+  background-color: #d5bdaf;
+  color: #edede9;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.play-again-button:hover,
+.reset-game-button:hover {
+  opacity: 0.7;
+}
+
+#player-x-score,
+#player-o-score,
+#tie {
+  padding-left: 1rem;
+}
